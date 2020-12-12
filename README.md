@@ -1,5 +1,5 @@
 # python-practice
-This is a m python practice repo<br/>
+This is my python practice repo<br/>
 Here I bring together many concepts of python under one roof<br/>
 In this code i am creating a class of some employees , for which i am reading the details from a user input file<br/>
 Post that i am plotting graphs comparing the salaries of the people<br/>
