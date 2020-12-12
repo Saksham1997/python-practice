@@ -6,4 +6,6 @@ Post that i am plotting graphs comparing the salaries of the people<br/>
 I am also upgrading the salaries of people and plotting the graphs again to check previous and new salaries.<br/>
 ![alt text](https://github.com/Saksham1997/python-practice/blob/master/box2.png?raw=true)<br/>
 
-
+To run this script :
+1. Download the csv file and the python script that has been given
+2. Now run the python script , when asks for user input file , enter the name of the csv file 
