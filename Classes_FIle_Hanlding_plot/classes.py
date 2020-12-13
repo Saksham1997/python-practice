@@ -44,7 +44,7 @@ def Plot_it(x_axis,y_axis):
         plt.scatter(x_axis,y_axis)
         plt.yscale('log')
     elif type.lower()=='histogram':
-        plt.hist(y_axis,bins=3)
+        plt.hist(y_axis,bins=20)
     elif type.lower()=='line':
         plt.plot(x_axis,y_axis)
     plt.title("Salary Comparision")
