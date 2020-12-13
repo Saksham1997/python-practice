@@ -47,6 +47,7 @@ def Plot_it(x_axis,y_axis):
         plt.hist(y_axis,bins=20)
     elif type.lower()=='line':
         plt.plot(x_axis,y_axis)
+    plt.grid(True)
     plt.title("Salary Comparision")
     plt.xlabel('Name')
     plt.ylabel('Pay')
