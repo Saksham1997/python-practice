@@ -39,7 +39,7 @@ class Employee:
 
 def Plot_it(x_axis,y_axis):
     name_file=input("Enter the image filename")
-    plt.plot(x_axis,y_axis)
+    plt.scatter(x_axis,y_axis)
     plt.title("Salary Comparision")
     plt.xlabel('Name')
     plt.ylabel('Pay')
