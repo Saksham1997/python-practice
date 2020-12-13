@@ -105,20 +105,23 @@ Plot_it(Names,Pay)
 
 
 #FIND THE EMPLOYEE FOR WHICH PAY HAS TO BE INCREASED AND INCREASING IT BY TAKING USER INPUT
-check=input("Do you want to update anyone's pay ?")
+check=input("Do you want to update anyone's pay (Press y/Y/N/n)?")
 if check.lower() == "n":
     pass
-else :
+elif check.lower() == "y" :
     updated_Name=[]
     updated_pay=[]
     name_pay=input("Enter the name of the employee")
     for obj in lis:
-        if(obj.first == name_pay):
-            #old_pay = obj.pay
-            pay_increase=float(input('Enter the increase to be given'))
-            Employee.self_raise_amt(pay_increase)
-            Employee.self_raise(obj)
-            print("\n Name:{} \t Pay:{}".format(obj.first,obj.pay))
+        try:
+            if(obj.first == name_pay):
+                #old_pay = obj.pay
+                pay_increase=float(input('Enter the increase to be given'))
+                Employee.self_raise_amt(pay_increase)
+                Employee.self_raise(obj)
+                print("\n Name:{} \t Pay:{}".format(obj.first,obj.pay))
+        except:
+            print('name doesnt exist')
         updated_Name.append(obj.first)
         updated_pay.append(obj.pay)
 
