@@ -39,7 +39,14 @@ class Employee:
 
 def Plot_it(x_axis,y_axis):
     name_file=input("Enter the image filename")
-    plt.scatter(x_axis,y_axis)
+    type=input("Enter the type of plot to be created (scatter/histogram/line) ")
+    if type.lower()=='scatter':
+        plt.scatter(x_axis,y_axis)
+        plt.yscale('log')
+    elif type.lower()=='histogram':
+        plt.hist(y_axis,bins=3)
+    elif type.lower()=='line':
+        plt.plot(x_axis,y_axis)
     plt.title("Salary Comparision")
     plt.xlabel('Name')
     plt.ylabel('Pay')
