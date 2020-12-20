@@ -78,7 +78,7 @@ class linked_list:
             cur=cur.next
         prev.next = cur.next
         cur = None
-        #print("DELETION DONE , NOW list is {}".format(self.display()))
+        print("DELETION DONE , NOW list is {}".format(self.display()))
 
 my_list = linked_list()
 print("Before putting any elements {}".format(my_list.display()))
@@ -92,4 +92,3 @@ print("the number at 2 is {}".format(my_list.index_pos(2)))
 my_list.insert_at_pos(2,70)
 print(my_list.display())
 my_list.delete_node(2)
-print(my_list.display())
